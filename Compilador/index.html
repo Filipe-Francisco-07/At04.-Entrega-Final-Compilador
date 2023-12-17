@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Compilador</title>
+</head>
+
+<body>   
+    <main id="container2">
+        <form id="login_form" method="post" action="Compilador.php">
+
+            <div id="form_header">
+                <h1>Compilador</h1>             
+            </div>
+            <br>
+            O compilador fará as análises Léxica, Sintática e Semântica da sua entrada!
+            <div id="table">
+                <h2>Tokens aceitos:</h2>
+                <br>
+                <h4>
+                id (A-Z ou A-Z 0-9 sem ser palavras reservadas), if (if), print (print)
+                </h4>
+                <h4>
+                for (for), constantes (0-9), mais(+), incremento(++), menos(-)
+                </h4>
+                <h4>
+                decremento(--), barra(/), pv(;), maior(>), maiorigual(>=), menor(<)
+            <h4>
+                menorigual(<=), igualdade(==), ap((), fp()), ac({), fc(})
+                <h4>
+                programa(programa), v(,), char(char), int(int), igual(=)
+            </h4>
+            <br>
+            <h2>Exemplos de cadeia aceita pela linguagem:</h2>
+            <br>
+             programa nomeprog ( int a ) { for ( int i = 0 ; i < 10 ; i ++ ) { print ( a ) ; } } 
+             <br>
+             programa nomeprog ( int a ) { if ( a > 10 ) { int x ; } }
+             <br>
+             programa nameprog ( ) { if ( x == 2 ) { print ( x ) ; } }
+
+            </div>
+
+        <label for="entrada"><h2>Escreva sua entrada:</h2></label><br>
+        <input type="text" name="entrada" id="entrada"><br>
+        <button type="submit"id="login_button">Verificar</button>
+    </form>
+</body>
+</html>
